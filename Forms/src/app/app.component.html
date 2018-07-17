@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>User Data</h1>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input #refName="ngModel" type="text" class="form-control" name="name" 
+            [(ngModel)]="name" required>
+            <div [hidden]="refName.valid" class="alert alert-danger">
+                Please enter a name!
+            </div>
+        </div>
+        <div ngModelGroup="address">
+            <div class="form-group">
+                <label for="city">City: </label>
+                <input type="text" class="form-control" name="city" [(ngModel)]="city">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
