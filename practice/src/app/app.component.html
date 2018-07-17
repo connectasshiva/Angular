@@ -1,0 +1,20 @@
+Enter Your Name:
+<br/>
+<input #userName type="text" value=''>
+<button #btn (click)=welcomeMe(userName.value)> Welcome Me </button>
+<br>
+
+<h3 id="output">
+  <div *ngIf="show">
+    <h2> Message from Event Binding
+      <br/> Welcome {{name}}</h2>
+  </div>
+</h3>
+
+
+<dl>
+    <dt>Bread</dt>
+    <dd>A baked food made of flour.</dd>
+    <dt>Coffee</dt>
+    <dd>A drink made from roasted coffee beans.</dd>
+</dl>
