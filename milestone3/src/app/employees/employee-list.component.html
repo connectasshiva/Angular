@@ -1,0 +1,10 @@
+<h2>My Employees</h2>
+<ul>
+  <li *ngFor="let employee of employees">
+
+    <a [routerLink]="['/employees', employee.id]">{{employee.id}}</a>
+    {{employee.name}}
+  </li>
+</ul>
+
+<button routerLink="/sidekicks">Go to sidekicks</button>
