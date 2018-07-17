@@ -1,0 +1,20 @@
+<div>
+  <h1>Create Grid Data Example</h1>
+<form (ngSubmit)=saveToGrid()>
+  <table>
+    <tr>
+      <td>Field 1</td>
+      <td><input type="text" name="field1" [(ngModel)]="rowData.field1"></td>
+    </tr>
+    <tr>
+        <td>Field 2</td>
+        <td><input type="text" name="field2" [(ngModel)]="rowData.field2"></td>
+      </tr>
+      <tr>
+          <input type="submit" value="Save To Grid">
+        </tr>
+  </table>
+
+</form>
+
+</div>
